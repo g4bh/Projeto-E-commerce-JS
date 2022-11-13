@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@100;200;300;400;500&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.gradiente{
+    height: 100vh;
+    /* width: 100vw; */
+    background: linear-gradient(128.34deg, #FFDDE4 22%, #FFFFFF 93.57%);
+}
+
+.divisor{
+    height: 190px;
+}
+
+.intro-produto{
+    background-color: #FFFFFF;
+    width: 90vw;
+    /* height: 30px; */
+    margin: auto;
+    border-radius: 33px;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25)
+}
+
+.title-content-produtos{
+    background-color:var(--color-pink-vibes);
+    padding: 0.5em 2em 0.5em 2em;
+    width: 4.4em;
+    margin: auto;
+    font-size: 2rem;
+    border-radius: 40px;
+    font-family: 'Fredoka';
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.title-conjunto{
+    padding: 49px;
+}
+
+.title-conjunto p{
+    font-family: 'Fredoka';
+    padding-top: 40px;
+    width: 45.5rem;
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.filtro-content-produtos{
+    padding: 14px 0px 54px 0px;
+}
+
+.filtro-content-produtos ul{
+    list-style: none;
+    display: flex;
+    width: 46rem;
+    margin: auto;
+}
+
+input[type="button"]{
+    color: var(--color-pink-vibes);
+    background-color: var(--color-white);
+    padding: 0.5em 2em 0.5em 2em;
+    font-family: 'Fredoka';
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 1px solid var(--color-pink-vibes);
+    border-radius: 30px;
+    margin: 0px 20px 0px 20px;
+}
+
+input[type="button"]:active{
+    background-color: var(--color-pink-vibes);
+    color: var(--color-white);
+}
+
+.content-produto-section{
+    /* background-color: blue; */
+    width: 82rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.card-produto{
+    height: 27em;
+    width: 18rem;
+    background-color: var(--color-baby-green);
+    position: relative;
+    border-radius: 15px;
+    margin: 20px;
+    filter:  drop-shadow(0px 4px 8px rgba(20, 20, 20, 0.15));
+}
+
+.info-produto-card{
+    background-color: var(--color-white);
+    /* background-color: aqua; */
+    width: 18rem;
+    height: 310px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    /* margin-top: 90px; */
+}
+
+.info-produto-card img{
+    width: 100%;
+}
+
+.imagem-produto-card{
+    position: absolute;
+    top: -85px;
+    margin: auto;
+    left: 7%;
+    width: 248px;
+    height: 179px;
+    overflow: hidden;
+}
+
+.info-produto-card-content{
+    position: absolute;
+    bottom: 25px;
+    left: 5.9%;
+    text-align: center;
+    font-family: 'Be Vietnam Pro';
+    /* font-weight: 100; */
+}
+
+.info-produto-card input[type="button"]{
+    background-color: var(--color-pink-vibes);
+    color: var(--color-white);
+    padding: 0.3em 1.4em 0.3em 1.4em;
+    /* font-size: 1rem; */
+    font-weight: 200;
+    font-family: 'Be Vietnam Pro';
+    margin: 0;
+}
+
+.info-produto-card-content h2{
+    width: 252px;
+    font-weight: 500;
+}
+
+
+.info-produto-card-content h3{
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 252px;
+}
+
+.info-produto-card-content p{
+    color: #3A3A3A;
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+span{
+    font-size: 0.9rem;
+}
+
+
+
+footer{
+    background-color: var(--color-baby-green);
+    width: 100%;
+    height: 1rem;
+    margin: auto;
+}
+
+footer img{
+    background-color: aqua;
+    width: 120px;
+}

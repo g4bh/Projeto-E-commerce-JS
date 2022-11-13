@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
+}
+
+
+.menu-lateral-adm{
+    background-color: #923B4B;
+    width: 14rem;
+    height: 100vh;
+    /* float: left; */
+}
+
+.menu-lateral-adm img{
+    width: 150px;
+    /* padding: 25px; */
+}
+
+.titulo-logo-adm{
+    padding: 30px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.menu-lateral-adm p{
+    font-size: 1.4rem;
+}
+
+.menu-lateral-adm ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-lateral-adm ul li a{
+    text-decoration: none;
+    position: relative;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.first-page-adm{
+    /* float: right; */
+    margin: 44px;
+}
+
+.sessao-boasvindas{
+    background-color: #fff;
+    border-radius: 11px;
+    padding: 49px;
+    width: 68vw;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+}
+
+.sessao-boasvindas{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.3rem;
+}
+
+.sessao-boasvindas h1{
+    margin-bottom: 4.5rem;
+    color: #923B4B;
+}
+

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@300;400&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(116.34deg, #FFDDE4 10.06%, #FFFFFF 96.59%);
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*css do menu*/
+li, a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 30% 30px 10%;
+}
+
+#logo{
+    margin-right: auto;
+}
+
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 50px;
+    font-weight: bold;
+}
+
+.nav_links li a {
+    color: #DE4A66;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:#FD879D;
+}
+
+.menu.img{
+    width: 200px;
+    height: 90px;
+}
+
+.carrinho{
+    width: 60px;
+    height: 50px;
+    margin-left: 10%;
+    padding-left: 10px;
+}
+
+/* fundo branco */
+#fundo{
+    position: absolute;
+    width: 90%;
+    height: 1000px;
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 206px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+    border-radius: 33px;
+}
+
+/*titulo carrinho*/
+#fundo > h4{
+    background-color: #DE4A66;
+    border-radius: 47.5px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    margin-left: 40%;
+    margin-top: 50px;
+    vertical-align: top;
+    padding-left: 65px;
+    padding-top: 6px;
+    color:#fff;
+    font-size: 35px;
+}
+
+#linha-tb{
+    background-color:#FD879D;
+    width: 67%;
+    height: 60px;
+    margin-left: 17%;
+    margin-top: 13%;
+    border-radius: 8px;
+}
+
+.prod{ 
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: 60%;
+    float: left;
+}
+
+.qt{
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 10%;
+}
+
+.vl{
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* position: absolute; */
+}
+
+.produtos{
+    box-sizing: border-box;
+    position: absolute;
+    width: 67%;
+    height: 160px;
+    margin-left: 17%;
+    margin-top: 60px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 17px;
+}
+
+
+footer{ 
+    background-color: #EEFFD3;;
+    width: 100%;
+    height: 90px;
+    margin-top:1100px;
+}
+
+.logo-moranguinho{
+    width: 110px;
+    height: 65px;
+    position: absolute;
+    margin-top: 25px;
+    left: 48%; 
+    /* margin: 35px 200px 0 855px; */
+}

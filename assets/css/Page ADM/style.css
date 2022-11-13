@@ -1,0 +1,33 @@
+.second-menu-title{
+    background-color: #B5495D;
+    width: 90vw;
+}
+
+.first-page-title{
+    /* float: right; */
+    margin: 44px;
+    background-color: #fff;
+}
+
+.sessao-title{
+    /* border: 1px solid ; */
+    border-radius: 11px;
+    padding: 5px 0px 5px 28px;
+    width: 72vw;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+}
+
+.sessao-title{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #B5495D;
+    font-size: 1.3rem;
+}
+
+.sessao-title h1{
+    /* margin-bottom: 4.5rem; */
+    color: #fff;
+}
+
+.first-page-sessao-cadastro{
+    margin: 44px;
+}

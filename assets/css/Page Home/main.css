@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@300;400&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
+:root{
+    --color-pink-vibes: #DE4A66;
+    --color-white: #fff;
+}
+
+.menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 9rem 0.5rem 9rem;
+}
+
+.menu h1 img{
+    width: 7.5rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 3rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    color: var(--color-pink-vibes);
+
+}
+
+.switch-dark-theme{
+    display: flex;
+    align-items: center;
+}
+
+.switch{
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 50px;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider-switch{
+    background-color: var(--color-white);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider-switch:before{
+    background-color: var(--color-pink-vibes);
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+}
+
+input:checked + .slider-switch{
+    background-color: var(--color-pink-vibes);
+}
+
+input:checked + .slider-switch:before{
+    transform: translateX(26px);
+    background-color: #fff;
+}
+
+.slider-switch.round {
+    border-radius: 34px;
+}
+
+
+.slider-switch.round:before {
+    border-radius: 50%;
+}
+
+
+.carrinho img {
+    width: 2.4rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFADBD;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*css do menu*/
+li, a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 30% 30px 10%;
+}
+
+#logo{
+    margin-right: auto;
+}
+/* ------------- fim menu ----------------- */
+
+.first{
+    border-radius: 0px 0px 180px 180px;
+    padding-top: 150px;
+    background: linear-gradient(116.34deg, #FFDDE4 10.06%, #FFFFFF 96.59%);
+}
+
+.img-linha{
+    height: 370px;
+    padding: 20px 40px 0px 13%;
+    margin-top: 3%;
+    vertical-align: top;
+}
+
+.div-um{
+    padding-right: 10%;
+    display:inline-block;
+    margin-top: 3.5%;
+    margin-bottom: 13%;
+    top: 500px;
+    vertical-align: top;
+}
+
+.div-um > h1{
+    color: #DE4A66;
+    font-size: 60px;
+    font-family: 'Fredoka One';
+}
+
+.div-um > p{
+    color: #649800;
+    font-family: 'Fredoka';
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+button{
+    padding: 5px 15px 5px 15px;
+    border: solid #FD879D 1px;
+    background-color: #FD879D;
+    border-radius: 34.5px;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    font-family: 'Fredoka';
+    margin-top: 20px;
+    height: 40px;
+    color: #F9F9F9;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-color: #FD879D;
+    color: #DE4A66;;
+    border: solid #FD879D 1px;
+}
+
+.img-moranguinho{
+    position: absolute;
+	left: 60%;
+	top: 10%;
+    width: 450px;
+    height: 650px;
+    /* vertical-align: top; */
+}
+
+.div-dois{
+    background-color: #FFADBD;
+    color: #fff;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 550px;
+    font-size: 25px;
+    /* border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px; */
+}
+
+.div-dois > h4{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.div-dois > p{
+    padding-bottom: 25px;
+}
+
+.circulos{
+    display: inline-block;
+    margin-top: 40px;
+    padding-bottom: 90px;
+}
+
+.bolos{
+    float: left;
+}
+
+.bolos > img{
+    width: 150px;   
+}
+
+.tortas{
+    float: left;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.tortas > img{
+    width: 150px;
+}
+
+.doces{
+    float: left;
+}
+
+.doces > img{
+    width: 150px;
+}
+
+.div-tres{
+    background-color: #FFF4F4;
+    width: 100%;
+    height: 600px;
+    border-radius: 78px;
+    margin-top: 50px;
+}
+
+.div-tres > h4{
+    background-color: #DE4A66;
+    border-radius: 47.5px;
+    position: absolute;
+    width: 480px;
+    height: 75px;
+    left: 515px;
+    top: 1320px;
+    padding-left: 60px;
+    padding-top: 15px;
+    color:#fff;
+    font-size: 35px;
+}
+
+.div-tres > p{
+    padding-top: 95px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.div-quatro{
+    background: linear-gradient(179.04deg, #DBF9AD 1.59%, #EFFFD8 97.91%);
+    width: 100%;
+    height: 900px;
+    /* border-top-left-radius: 80px;
+    border-top-right-radius: 80px; */
+}
+
+.div-quatro > h4{
+    color: #fff;
+    background-color: #76B301;
+    border-radius: 47.5px;
+    position: absolute;
+    width: 480px;
+    height: 75px;
+    left: 515px;
+    top: 2050px;
+    padding-left: 90px;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.aval-clientes{
+    background-color: #fff;
+    width: 75%;
+    height: 500px;
+    border-radius: 33px;
+    padding: 20px;
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 12%;
+    margin-top: 15%;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+}
+
+/* img laranjinha */
+.aval-clientes > img{
+    width: 210px;
+    height: 200px;
+    margin-left: 13%;
+    margin-top: 10%;
+}
+
+.escrita{
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 8%;
+    margin-top: 9%;
+    font-size: 30px;
+}
+
+.escrita > h4{
+    color: #76B301;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.escrita > {
+    padding-top: 40px;
+}
+
+.logo-moranguinho{
+    width: 110px;
+    height: 65px;
+    position: absolute;
+    margin-top:810px;
+    left: 48%; 
+    /* margin: 35px 200px 0 855px; */
+}
+
