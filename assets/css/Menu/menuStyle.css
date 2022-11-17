@@ -52,6 +52,21 @@
     box-shadow: 0px 4px 18px 0px #BCBCBC7A;
 }
 
+.sessao-icon-adm img{
+    margin-right: 10px;
+    width: 15px;
+}
+
+.sessao-icon-adm a{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.1rem;
+    background-color: #DE4A66;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
 .switch-dark-theme{
     display: flex;
     align-items: center;

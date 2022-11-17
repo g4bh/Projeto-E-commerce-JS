@@ -1,33 +1,61 @@
-.second-menu-title{
-    background-color: #B5495D;
-    width: 90vw;
+main{
+    width: 100%;
 }
 
 .first-page-title{
-    /* float: right; */
-    margin: 44px;
-    background-color: #fff;
-}
-
-.sessao-title{
-    /* border: 1px solid ; */
-    border-radius: 11px;
-    padding: 5px 0px 5px 28px;
-    width: 72vw;
-    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
-}
-
-.sessao-title{
-    font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #B5495D;
-    font-size: 1.3rem;
-}
-
-.sessao-title h1{
-    /* margin-bottom: 4.5rem; */
     color: #fff;
+    height: 70px;
+    padding: 15px 0px 15px 35px;
 }
 
 .first-page-sessao-cadastro{
-    margin: 44px;
+    width: 95%;
+    margin: 30px;
 }
+
+.sessao-produto{
+    padding: 10px 0px 10px 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+    border-radius: 20px;
+}
+
+.espaco-bottom{
+    padding: 10px 10px 40px 10px;
+    text-align: left;
+}
+
+table th{
+    color: #B5495D;
+    font-weight: 400;
+    padding: 20px 160px 10px 10px;
+    text-align: left;
+}
+
+table td{
+    padding: 10px 160px 25px 10px;
+    font-size: 1.7rem;
+}
+
+input[type="button"]{
+    background-color: #923B4B;
+    color: #fff;
+    border-radius: 40px;
+    padding: 7px 15px 5px 15px;
+    margin: 0px 0px 20px 30px;
+    font-size: 2rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.adiciona-produtos p{
+    display: inline;
+    margin-left: 20px;
+    color: #471B23;
+}
+
+.adiciona-produtos{
+    cursor: pointer;
+}
+

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@100;200;300;400;500&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.gradiente{
+    background: linear-gradient(128.34deg, #FFDDE4 22%, #FFFFFF 93.57%);
+    width: 100vw;
+}
+
+.divisor{
+    height: 140px;
+}
+
+.form-contato{
+    border: 5px #DE4A66 dashed;
+    background-color: #FFFFFF;
+    width: 90vw;
+    margin: auto;
+    border-radius: 33px;
+    box-shadow: 01px 4px 24px rgba(69, 69, 69, 0.25);
+    display: flex;
+}
+.aba-a{
+    width: 45vw;
+}
+
+fieldset{
+    height: 25em;
+    margin-top: 70px;
+    border-radius: 20px;
+    border: 1px #ffb6c3 solid;
+    background-color: #ffb6c3;
+}
+
+.aba-b{
+    width: 45vw;
+}
+
+.conteudo-aba-a{
+    width: 75%;
+    float: right;
+    padding: 100px;
+    font-family: 'Fredoka';
+}
+
+.conteudo-aba-b{
+    width: 80%;
+    padding: 90px 130px;
+    font-family: 'Fredoka';
+    color: #DE4A66;
+}
+
+.texto-conteudo-aba-b{
+    margin-bottom: 50px;
+    color: #DE4A66;
+}
+
+.texto-conteudo-aba-b p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.texto-conteudo-aba-b h2{
+    color: #9dc261;
+    font-size: 1rem;
+}
+
+input{
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid #d1e5b0;
+    padding: 60px 0px 20px 0px;
+    font-family: 'Fredoka';
+    font-weight: bold;
+    font-size: 20px;
+    color:#9dc261;
+    transition: 0.3s;
+}
+
+input::placeholder{
+    font-size: 17px;
+    color: #DE4A66;
+}
+
+input:focus{
+    border: 0px;
+    border-bottom: 2px solid #9dc261;
+    outline: 0;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+label{
+    color: #DE4A66;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+textarea{
+    border: #d1e5b0 3px solid;
+    width: 90%;
+    height: 140px;
+    margin: 25px 0px 20px 0px;
+    transition: 0.3s;
+    color: #9dc261;
+    font-size: 20px;
+    padding: 10px;
+    font-style: normal;
+    resize: none;
+}
+
+textarea:focus{
+    outline: 0;
+    border: 3px solid #DE4A66;
+}
+
+.button-enviar{
+    padding: 5px 20px 5px 20px;
+    border: solid #DE4A66 1px;
+    background-color: #DE4A66;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Fredoka';
+    transition: all 0.3s ease 0s;
+    float: right;
+    margin-right: 15px;
+}
+
+.button-enviar:hover{
+    background-color: #ECECEC;
+    color: #1E1E1E;
+    border: solid #ECECEC 1px;
+}

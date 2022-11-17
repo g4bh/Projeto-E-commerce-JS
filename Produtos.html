@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/Page Produtos/menuStyle.css">
+    <link rel="stylesheet" href="assets/css/Menu/menuStyle.css">
     <link rel="stylesheet" href="assets/css/Page Produtos/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <title>Produtos</title>
 </head>
 <body class="gradiente">
     
-    <aside class="menu">
+    <aside id="menu" class="menu">
         <div class="main-content">
-            <h1><a href="index.html"><img src="assets/img/imagem_2022-11-09_232301656.png"></a></h1>
+            <h1><a href="index.html"><img src="assets/img/LogoTemaClaro.png"></a></h1>
             <nav>
                 <ul>
                     <li><a href="Produtos.html">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li></li>
                 </ul>
             </nav>
             <div class="switch-dark-theme">
+                <img src="assets/img/switch/icon_sun_pink.svg" alt="">
                 <label for="checkbox" class="switch">
                     <input type="checkbox" id="checkbox">
                     <div class="slider-switch round"></div>
                 </label>
+                <img src="assets/img/switch/icon_moon_pink.svg" alt="">
+            </div>
+            <div class="sessao-icon-adm">
+                <a href="indexADM.html"><img src="assets/img/icon-padclock-branco.svg" alt="">ADM</a>
             </div>
             <div class="carrinho"><a href="carrinho.html"><img src="assets/img/carrinho.svg" alt="Carrinho"></a></div>
         </div>
-    </aside>
+    </aside> 
 
     <div class="divisor"></div>
 
@@ -64,8 +70,8 @@
                     <div class="info-produto-card">
                         <div class="imagem-produto-card"><img src="https://cdn.sodiedoces.com.br/wp-content/uploads/2022/06/02172232/fatia_540x400px.png" alt=""></div>
                         <div class="info-produto-card-content">
-                            <h2 class="nome-produto">Bolo feito com Nescau com ameixa</h2>
-                            <h3 class="sabor-produto">Com recheio de chocolate</h3>
+                            <h2 class="nome-produto">Bolo feito com Nescau</h2>
+                            <h3 class="sabor-produto">Com recheio de ameixas</h3>
                             <p class="preco-produto">R$ 235,29 <span>unid.</span></p>
                             <input type="button" id="botao-carrinho-produto" value="Adicionar ao carrinho">
                         </div>
@@ -149,6 +155,6 @@
     </main>
 
     <!-- <footer><img src="assets/img/imagem_2022-11-09_232301656.png" alt="Logo Moranguinho"></footer> -->
-
+    <script type="text/javascript" src="assets/js/menu_effect/main.js"></script>
 </body>
 </html>

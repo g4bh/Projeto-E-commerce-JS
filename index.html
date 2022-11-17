@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/Page Home/main.css'>
-    <title>Home - Moranguinho</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/Page Home/main.css'> 
+    <link rel="stylesheet" href="assets/css/Menu/menuStyle.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <script src="assets/js/Home/main.js"></script>
+    <title>Moranguinho Store</title>
 </head>
 <body>
-        <aside class="menu">
+        <aside id="menu" class="menu">
             <div class="main-content">
                 <h1><a href="index.html"><img src="assets/img/LogoTemaClaro.png"></a></h1>
                 <nav>
                     <ul>
                         <li><a href="Produtos.html">Produtos</a></li>
-                        <li><a href="#">Cadastro</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li></li>
                     </ul>
                 </nav>
                 <div class="switch-dark-theme">
+                    <img src="assets/img/switch/icon_sun_pink.svg" alt="">
                     <label for="checkbox" class="switch">
                         <input type="checkbox" id="checkbox">
                         <div class="slider-switch round"></div>
                     </label>
+                    <img src="assets/img/switch/icon_moon_pink.svg" alt="">
+                </div>
+                <div class="sessao-icon-adm">
+                    <a href="indexADM.html"><img src="assets/img/icon-padclock-branco.svg" alt="">ADM</a>
                 </div>
                 <div class="carrinho"><a href="carrinho.html"><img src="assets/img/carrinho.svg" alt="Carrinho"></a></div>
             </div>
-        </aside>
+        </aside> 
+        
     <div class="first">
-        <img src="assets/img/linha.png" class="img-linha" alt="linha em rosa na vertical">
+        <div class="first-content">
+            <div class="first-content-text">
+            <img src="assets/img/linha.png" class="img-linha" alt="linha em rosa na vertical">
 
-        <div class="div-um">
-            <h1>A lojinha<br> mais doce do<br> mundo!</h1>
-            <p>Venha dar uma olhada no tanto de<br> novidade na loja!</p>
-            <a href="#"><button>Veja mais</button></a>
+            <div class="div-um">
+                <h1>A lojinha mais doce do mundo!</h1>
+                <p>Venha dar uma olhada no tanto de novidade na loja!</p>
+                <a href="Produtos.html"><button>Veja mais</button></a>
+            </div>
         </div>
-
             <img src="assets/img/Moranguinho.png" class="img-moranguinho" alt="moranguinho sentada em uma flor rodeada por morangos">
+        </div>
     </div>
 
     <div class="div-dois">
@@ -65,39 +77,72 @@
 
 
     <div class="div-tres">
-        <h4>Produtos mais vendidos</h4>
-
-        <p>Confira os produtos que são sucesso na loja!</p>
-
-        <div class="bolo-um">
-
+        <div class="title-tres">
+            <h4>Produtos mais vendidos</h4>
+            <p>Confira os produtos que são sucesso na loja!</p>
         </div>
+        <section class="content-produto-section">
+            <div class="card-produto">
+                <div class="info-produto-card">
+                    <div class="imagem-produto-card"><img src="assets/img/bolo.png" alt=""></div>
+                    <div class="info-produto-card-content">
+                        <h2 class="nome-produto">Bolo de Chocolate</h2>
+                        <h3 class="sabor-produto">Com recheio de chocolate</h3>
+                        <p class="preco-produto">R$ 23,29 <span>unid.</span></p>
+                        <input type="button" id="botao-carrinho-produto" value="Adicionar ao carrinho">
+                    </div>
+                </div>
+            </div>
 
-        <div class="bolo-dois">
+            <div class="card-produto">
+                <div class="info-produto-card">
+                    <div class="imagem-produto-card"><img src="https://cdn.sodiedoces.com.br/wp-content/uploads/2022/06/02172232/fatia_540x400px.png" alt=""></div>
+                    <div class="info-produto-card-content">
+                        <h2 class="nome-produto">Bolo feito com Nescau com ameixa</h2>
+                        <h3 class="sabor-produto">Com recheio de chocolate</h3>
+                        <p class="preco-produto">R$ 25,29 <span>unid.</span></p>
+                        <input type="button" id="botao-carrinho-produto" value="Adicionar ao carrinho">
+                    </div>
+                </div>
+            </div>
 
-        </div>
-
-        <div class="bolo-tres">
-
+            <div class="card-produto">
+                <div class="info-produto-card">
+                    <div class="imagem-produto-card"><img src="https://cdn.sodiedoces.com.br/wp-content/uploads/2021/09/25112614/fatia_nescau_540x400px.png" alt=""></div>
+                    <div class="info-produto-card-content">
+                        <h2 class="nome-produto">Bolo de Chocolate</h2>
+                        <h3 class="sabor-produto">Com recheio de chocolate</h3>
+                        <p class="preco-produto">R$ 23,29 <span>unid.</span></p>
+                        <input type="button" id="botao-carrinho-produto" value="Adicionar ao carrinho">
+                    </div>
+                </div>
+            </div>
+        </section>
         </div>
     </div>
 
     <div class="div-quatro">
-        <h4>Avaliação dos clientes</h4>
-
-        <div class="aval-clientes">
-            <img class="img-laranjinha" src="assets/img/laranjinha.png" alt="ilustração da laranjinha">
+        <div class="title-quatro">
+            <h4>Avaliação dos clientes</h4>
+        </div>
+        
+        <div class="review">
+            <img id="foto" src="assets/img/laranjinha.png" alt="ilustração dos clientes">
             <div class="escrita">
-                <h3>Laranjinha da Silva</h3>
-                <h4>Cliente há 2 anos</h4>
+                <h3 id="nome">Laranjinha da Silva</h3>
+                <h4 id="tempo">Cliente há 2 anos</h4>
 
-                <p>Amei os produtos! Compro os docinhos<br> sempre e amo a qualidade!<br> Parabéns
+                <p id="texto">Amei os produtos! Compro os docinhos<br> sempre e amo a qualidade!<br> Parabéns
                 Moranguinho, melhor loja!</p>
             </div>
+            <div class="setas">
+                <button class="right" href="">direita</button>
+                <button class="left" href="">esquerda</button>
+            </div>
         </div>
-
         <a href="indexADM.html"><img class="logo-moranguinho" src="assets/img/LogoTemaClaro.png" alt="logo da maoranguinho"></a>
     </div>
 
+    <script type="text/javascript" src="assets/js/menu_effect/main.js"></script>
 </body>
 </html>

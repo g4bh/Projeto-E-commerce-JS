@@ -16,9 +16,11 @@
     left: 0;
     right: 0;
     width: 100%;
+    transition: all 0.2s ease-out;
 }
 
 .main-content{
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +28,7 @@
 }
 
 .menu h1 img{
-    width: 7.5rem;
+    width: 6rem;
 }
 
 .menu ul{
@@ -45,16 +47,26 @@
 
 }
 
+.menuAlterado{
+    background-color: #FFEDF0;
+    box-shadow: 0px 4px 18px 0px #BCBCBC7A;
+}
+
 .switch-dark-theme{
     display: flex;
     align-items: center;
 }
 
+.switch-dark-theme img{
+    width: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
 .switch{
     display: inline-block;
-    height: 24px;
+    height: 26px;
     position: relative;
-    width: 50px;
+    width: 52px;
 }
 
 .switch input{
@@ -70,6 +82,7 @@
     right: 0;
     top: 0;
     transition: .4s;
+    border: 1px solid #ffc7d2;
 }
 
 .slider-switch:before{
