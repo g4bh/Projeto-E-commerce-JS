@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@100;200;300;400;500&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
 }
 
-.gradiente{
-    background: linear-gradient(128.34deg, #FFDDE4 22%, #FFFFFF 93.57%);
+body{
+    background-color:#FFEDF0;
     width: 100vw;
 }
 

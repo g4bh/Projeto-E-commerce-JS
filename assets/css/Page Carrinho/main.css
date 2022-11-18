@@ -6,7 +6,7 @@
 }
 
 body{
-    background: linear-gradient(116.34deg, #FFDDE4 10.06%, #FFFFFF 96.59%);
+    background-color:#FFEDF0;
     font-family: 'Fredoka', sans-serif;
     height: 100vh;
 }
@@ -229,20 +229,12 @@ hr {
     border: solid #FD879D 1px;
 }
 
-footer{ 
-    background-color: #EEFFD3;;
-    width: 100%;
-    height: 90px;
-    margin-top:1100px;
-}
-
 .logo-moranguinho{
     width: 110px;
     height: 65px;
     position: absolute;
     margin-top: 25px;
     left: 48%; 
-    /* margin: 35px 200px 0 855px; */
 }
 
 

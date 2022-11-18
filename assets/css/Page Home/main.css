@@ -143,7 +143,6 @@ button:hover{
 .div-tres{
     background-color: #FFF4F4;
     width: 100%;
-    /* height: 700px; */
     border-radius: 78px 78px 0px 0px;
     margin-top: 50px;
 }
@@ -312,49 +311,52 @@ span{
 .div-quatro{
     background: linear-gradient(179.04deg, #DBF9AD 1.59%, #EFFFD8 97.91%);
     width: 100%;
-    
+}
+
+.title-quatro{
+    padding: 4%;
+    width: 45%;
+    margin: auto;
 }
 
 .title-quatro h4{
     color: #fff;
     background-color: #76B301;
+    margin: auto;
     border-radius: 47.5px;
-    position: absolute;
-    width: 480px;
-    height: 75px;
-    left: 515px;
-    top: 2150px;
-    padding-left: 90px;
-    padding-top: 15px;
-    font-size: 30px;
+    padding: 15px 60px;
+    color: #fff;
+    font-size: 35px;
+    width: 485px;
 }
 
 .review{
     background-color: #fff;
     width: 75%;
+    margin: auto;
     height: 500px;
     border-radius: 33px;
     padding: 20px;
-    display:inline-block;
-    vertical-align: top;
-    margin-left: 12%;
-    margin-top: 15%;
     box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+    margin-bottom: 50px;
 }
 
-.review > img{
+.review-content{
+    width: 82%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.review-content img{
     width: 210px;
-    height: 200px;
-    margin-left: 13%;
-    margin-top: 10%;
 }
 
 .escrita{
     display:inline-block;
     vertical-align: top;
     margin-left: 8%;
-    margin-top: 9%;
     font-size: 30px;
+    width: 66%;
 }
 
 .escrita > h4{
@@ -397,9 +399,16 @@ span{
     border-left:28px solid white;
 }
 
+.setas{
+    float: left;
+    margin-top: 14%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
 .left{
     position: absolute;
-	left: 16%;
+	left: 14%;
 	top: 2500px;
 }
 
@@ -410,11 +419,17 @@ span{
 }
 
 
+footer{
+    background-color: #EEFFD3;
+    width: 100%;
+}
+
+.content-footer{
+    width: 110px;
+    padding: 15px 0px 15px 0px;
+    margin: auto;
+}
 .logo-moranguinho{
     width: 110px;
-    height: 65px;
-    position: absolute;
-    margin-top:810px;
-    left: 48%; 
 }
 

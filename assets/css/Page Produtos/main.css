@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@100;200;300;400;500&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
 }
 
-.gradiente{
+body{
+    background-color:#FFEDF0;
+    font-family: 'Fredoka', sans-serif;
     height: 100vh;
-    background: linear-gradient(128.34deg, #FFDDE4 22%, #FFFFFF 93.57%);
 }
 
 .divisor{
@@ -19,6 +20,7 @@ body{
     width: 90vw;
     margin: auto;
     border-radius: 33px;
+    margin-bottom: 60px;
     box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25)
 }
 
@@ -157,13 +159,15 @@ span{
 
 
 footer{
-    background-color: var(--color-baby-green);
+    background-color: #EEFFD3;
     width: 100%;
-    height: 1rem;
-    margin: auto;
 }
 
-footer img{
-    background-color: aqua;
-    width: 120px;
+.content-footer{
+    width: 110px;
+    padding: 15px 0px 15px 0px;
+    margin: auto;
+}
+.logo-moranguinho{
+    width: 110px;
 }
