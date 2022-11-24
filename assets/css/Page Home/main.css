@@ -406,6 +406,28 @@ span{
     to{transform: translate(0px,00);}
 }
 
+.bolinhas{
+
+    margin-left: 47%;
+    margin-top: 5px;
+    margin-bottom: 5%;
+}
+
+.bolinhas span{
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #DE4A66;
+}
+
+.bolinhas span.marcador{
+
+   background-color: #FFADBD;
+}
+
 footer{
     background-color: #EEFFD3;
     width: 100%;

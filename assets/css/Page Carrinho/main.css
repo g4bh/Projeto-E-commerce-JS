@@ -53,7 +53,7 @@ body{
     color: #fff;
     padding-top: 20px;
     padding-left: 20px;
-    margin-right: 60%;
+    margin-right: 56%;
     float: left;
 }
 
@@ -62,7 +62,7 @@ body{
     padding-top: 20px;
     padding-left: 20px;
     float: left;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 
 .vl{
@@ -75,7 +75,7 @@ body{
 hr {
 	border: 0;
 	border-top: 1px solid #BCBCBC;
-    margin: 50px 17%;
+    margin: 50px 20%;
 }
 
 .produtos{
@@ -89,6 +89,11 @@ hr {
     border: 1px solid #BCBCBC;
     border-radius: 17px;
     flex-direction: column;
+}
+
+.produtos > h2{
+    font-size: 25px;
+    margin-right: 10%;
 }
 
 .excluir{
@@ -117,6 +122,7 @@ hr {
     width: 67%;
     height: 100px;
     margin-left: 17%;  
+    padding-top: 2.5%;
     border: 1px solid #BCBCBC;
     border-radius: 12px;
 }
@@ -124,15 +130,16 @@ hr {
 /* titulo valor total */
 .container-total > h2{
     margin-top: 20%;
-    margin-left: 10%;
+    margin-left: 8%;
     padding-right: 60%;
-    /* padding-top: 1000px; */
     display: inline;
+    text-align: center;
 }
 
 /* preço final*/
 .container-total > h3{
     display: inline;
+    text-align: center;
 }
 
 .imagem-produto-card{
