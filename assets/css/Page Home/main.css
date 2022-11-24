@@ -330,12 +330,6 @@ span{
     width: 485px;
 }
 
-.title-quatro > h3{
-    padding-top: 5%;
-    text-align: justify;
-    font-size: 20px;
-}
-
 .escrita{
     display:inline-block;
     vertical-align: top;
@@ -426,6 +420,24 @@ span{
 .bolinhas span.marcador{
 
    background-color: #FFADBD;
+}
+
+.fundo-slider{
+    background-color: #fff;
+    width: 60%;
+    height: 60%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    border-radius: 70px;
+    margin: auto;
+}
+
+.text-div-for{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    text-align: justify;
+    /* font-size: 18px; */
 }
 
 footer{
