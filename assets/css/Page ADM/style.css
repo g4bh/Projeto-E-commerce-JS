@@ -19,6 +19,7 @@ main{
     background-color: #fff;
     box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
     border-radius: 20px;
+    margin-bottom: 27px;
 }
 
 .espaco-bottom{
@@ -59,3 +60,16 @@ input[type="button"]{
     cursor: pointer;
 }
 
+.NovaTabela {
+    width: 95%;
+    margin: 30px;
+    margin-bottom: ;
+}
+
+
+.table-th{
+    color: #B5495D;
+    font-weight: 400;
+    padding: 20px 160px 10px 10px;
+    text-align: left;
+}

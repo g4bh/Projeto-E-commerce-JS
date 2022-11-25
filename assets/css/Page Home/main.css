@@ -327,7 +327,7 @@ span{
     padding: 15px 60px;
     color: #fff;
     font-size: 35px;
-    width: 485px;
+    width: 442px;
 }
 
 .escrita{
@@ -384,6 +384,7 @@ span{
     height: 500px;
     margin: auto;
     position: relative;
+    margin-bottom: 45px;
 }
 
 .box-image img{
@@ -437,7 +438,7 @@ span{
     padding-left: 15%;
     padding-bottom: 5%;
     text-align: justify;
-    /* font-size: 18px; */
+    color: #446900;
 }
 
 footer{

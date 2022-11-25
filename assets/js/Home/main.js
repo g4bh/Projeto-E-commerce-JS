@@ -1,5 +1,4 @@
 var interval = 0;
-
 var maxSlider = document.querySelectorAll('.box-image').length - 1;
 
 sumir()

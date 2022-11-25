@@ -11,10 +11,10 @@ body{
 
 .menu-lateral-adm{
     background-color: #923B4B;
-    width: 100%;
-    height: 100vh;
+    width: 14rem;
+    height: 100%;
     float: left;
-    z-index: 1;
+    position: fixed;
 }
 
 .menu-lateral-adm img{
@@ -26,6 +26,12 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
     color: white;
     font-size: 1.3rem;
+    position: fixed;
+}
+
+nav{
+    position: fixed;
+    margin-top: 14rem;
 }
 
 .menu-lateral-adm p{
@@ -33,8 +39,10 @@ body{
 }
 
 .menu-lateral-adm ul{
+    gap: 50px;
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
 .menu-lateral-adm ul li a{
@@ -48,6 +56,7 @@ body{
 
 main{
     width: 100%;
+    margin-left: 224px;
 }
 
 .first-page-adm{
@@ -71,3 +80,11 @@ main{
     color: #923B4B;
 }
 
+button{
+    color: #fff;
+    background-color: #d44862;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3rem;
+}
