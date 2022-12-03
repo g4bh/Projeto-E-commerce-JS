@@ -171,3 +171,26 @@ footer{
 .logo-moranguinho{
     width: 110px;
 }
+
+/* #produtos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:0 5%;
+    display:flex;
+}
+
+#carrinhos{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:0 2%;
+    display: block;
+}
+
+.produto-single{
+    width: 33.3%;
+    padding:0 20px;
+}
+
+.cake-image{
+    width:200px;
+} */

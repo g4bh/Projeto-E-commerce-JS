@@ -1,4 +1,4 @@
-let bolosJson = [ {id: 1, name: 'Bolo de Chocolate', img: 'assets/img/bolos/bolo1.png', price: 2.00, description: 'Bolo de chocolate com recheio de chocolate', type: 'chocolate' },
-{id: 2, name: 'Bolo de Morango', img: 'assets/img/bolos/bolo2.png', price: 2.00, description: 'Bolo branco com recheio de morango', type: 'morango'},
-{id: 3, name: 'Bolo Prestígio', img: 'assets/img/bolos/bolo3.png', price: 2.00, description: 'Bolo de chocolate com recheio de coco', type: 'coco' },
-{id: 4, name: 'Bolo Red Velvet', img: 'assets/img/bolos/bolo4.png', price: 2.00, description: 'Bolo de massa vermelha com creme ', type:'morango'}]
+// let bolosJson = [ {id: 1, name: 'Bolo de Chocolate', img: 'assets/img/bolos/bolo1.png', price: 2.00, description: 'Bolo de chocolate com recheio de chocolate', type: 'chocolate' },
+// {id: 2, name: 'Bolo de Morango', img: 'assets/img/bolos/bolo2.png', price: 2.00, description: 'Bolo branco com recheio de morango', type: 'morango'},
+// {id: 3, name: 'Bolo Prestígio', img: 'assets/img/bolos/bolo3.png', price: 2.00, description: 'Bolo de chocolate com recheio de coco', type: 'coco' },
+// {id: 4, name: 'Bolo Red Velvet', img: 'assets/img/bolos/bolo4.png', price: 2.00, description: 'Bolo de massa vermelha com creme ', type:'morango'}]
