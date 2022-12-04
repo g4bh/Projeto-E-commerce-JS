@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@100;200;300;400;500&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
 main{
     width: 100%;
 }
@@ -61,8 +63,6 @@ input[type="button"]{
 
 .NovaTabela {
     width: 95%;
-    /* margin: 30px;
-    margin-bottom: ; */
 }
 
 
@@ -77,4 +77,112 @@ input[type="button"]{
 
 #preco{
     font-size: 1.6rem;
+}
+
+.botao_editar{
+    background-color: #471B23;
+}
+
+#titulo-principal{
+    color: #923B4B;
+}
+
+#CadastroProdutos{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.13);
+}
+
+#CadastroProdutos > input[type="text"]{
+    padding: 9px;
+    border-color: #923B4B;
+    border-radius: 20px;
+    font-family: 'Be Vietnam Pro';
+    width: 17%;
+}
+
+#CadastroProdutos > input[type="number"]{
+    padding: 9px;
+    border-color: #923B4B;
+    border-radius: 20px;
+    font-family: 'Be Vietnam Pro';
+    width: 17%;
+}
+
+#CadastroProdutos > input[type="submit"]{
+    padding: 12px 14px;
+    background-color: #923B4B;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 40px;
+    font-family: 'Be Vietnam Pro';
+    color: #fff;
+}
+
+
+#nop{
+    margin-left: 0;
+}
+
+label{
+    margin-left: 40px;
+}
+
+.divisor-titulos{
+    background-color: #923B4B;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.content-titulo-divisor > p {
+    display: inline;
+    margin-right: 19rem;
+    color: #fff;
+}
+
+.ProdutoCadastrado{
+    margin-top: 30px;
+    border: 1px solid #471B23;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produtinho input{
+    border: 0;
+    flex: 1 1 0%;
+    margin-top: 6px;
+    margin-right: 100px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.botao-editar{
+    background-color:cornflowerblue;
+    color: #fff;
+    border-radius: 10px;
+    padding: 9px;
+    border: 0px;
+    margin-right: 15px;
+    font-family: 'Be Vietnam Pro';
+}
+
+.botao-excluir{
+    background-color:crimson;
+    color: #fff;
+    border-radius: 10px;
+    padding: 9px;
+    border: 0px;
+    margin-top: 10px;
+    margin-right: 3px;
+    font-family: 'Be Vietnam Pro';
+}
+
+.produtinho > input:not(:read-only){
+    color: #923B4B;
+    border: 1px solid#B5495D;
 }

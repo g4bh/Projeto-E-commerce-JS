@@ -20,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="admCadastro.html">Cadastro de <br>produtos</a></li>
-                    <li><a href="index.html"><button id="botaovoltar">Voltar</button></a></li>
+                    <li><a href="index.html"><input type="submit" id="botaovoltar" value="Voltar"></a></li>
                 </ul>
 
             </nav>
@@ -35,40 +35,36 @@
         </section>
 
         <section class="first-page-sessao-cadastro">
-            <div class="sessao-produto">
-                <table class="tabela-produtos">
-                    <tr>
-                        <th>Nome do produto</th>
-                        <th>Recheio</th>
-                        <th>Preço (em reais)</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" class="espaco-bottom"></td>
-                        <td><input type="text" class="espaco-bottom"></td>
-                        <td><input type="text" class="espaco-bottom"></td>
-                    </tr>
-                </table>
-                <div class="botoesSessao">
-                    <button>Delete</button>
-                    <button>Editar</button>
+
+            <h1 id="titulo-principal">Insira as informações do produto</h1>
+
+            <form id="CadastroProdutos">
+                <label for="">Nome: </label>
+                <input type="text" id="nomeBolo">
+                <label for="">Recheio:</label>
+                <input type="text" id="recheioBolo">
+                <label for="">Preço (em reais):</label>
+                <input type="number" id="precoBolo">
+                <input type="submit">
+            </form>
+        
+            <div class="divisor-titulos">
+                <div class="content-titulo-divisor">
+                    <p class="titulo-divisor-produto" id="nop">Nome</p>
+                    <p class="titulo-divisor-produto">Recheio</p>
+                    <p class="titulo-divisor-produto">Preço (em reais)</p>
                 </div>
             </div>
-        </section>
 
-        <section class="NovaTabela">
-            <div class="tabelinhas">
-
-            </div>
-        </section>
-
-        <div class="adiciona-produtos">
-            <input type="button" value="+" onclick="gerador()"><p>Adicionar produtos</p>
-        </div>
+            <section>
+                <div id="Cadastrados-produtos">
+                </div>
+            </section>
 
     </main>
 
-    <script src="assets/js/ADM/main.js"></script>
-
     <footer><img src="" alt=""></footer>
+
+    <script src="assets/js/ADM/main.js"></script>
 </body>
 </html>

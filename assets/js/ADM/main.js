@@ -1,52 +1,94 @@
-var corpinho = document.querySelector(".tabelinhas")
+window.addEventListener('load', () =>{
+    const CadastroProdutos = document.querySelector('#CadastroProdutos')
+    const nome = document.querySelector('#nomeBolo')
+    const recheio = document.querySelector('#recheioBolo')
+    const preco = document.querySelector('#precoBolo')
+    const ProdutoCadastrado = document.querySelector('#Cadastrados-produtos')
 
-function gerador() {
-    const tabelinha = document.createElement("table")
-    const tabelinhabody = document.createElement("tbody")
 
-    for (i = 0; i < 1; i++){
-        const linha = document.createElement("tr")
+    CadastroProdutos.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-        for (g = 0; g < 3; g ++){
-            const celula = document.createElement("td")
-            const tituluzin = document.createElement("th")
-            const title1 = document.createTextNode("Nome do produto")
-            const title2 = document.createTextNode("Recheio")
-            const title3 = document.createTextNode("Preço (em reais)")
-            const conteudo = document.createElement("input")
-            
-            tituluzin.classList.add("table-th")
-            
-            if( g == 0 ){
-                tituluzin.appendChild(title1)
-            }else{
-                if( g == 1){
-                    tituluzin.appendChild(title2)
-                }else{
-                    tituluzin.appendChild(title3)
-                }
-            }
+        const coluna1 = nome.value;
+        const coluna2 = recheio.value;
+        const coluna3 = preco.value;
 
-            conteudo.classList.add("espaco-bottom")
-            celula.appendChild(tituluzin)
-            celula.appendChild(conteudo)
-            linha.appendChild(celula)
+        if (!coluna1 || !coluna2 || !coluna3){
+            alert('preencha a coluna')
+            return
         }
 
-        linha.classList.add("linhazinha")
-        tabelinhabody.appendChild(linha)
+        const produto = document.createElement("div")
+        produto.classList.add("ProdutoCadastrado")
+        const conteudoProduto = document.createElement("div")
+        conteudoProduto.classList.add("produtinho")
+ 
 
-    }
+        produto.appendChild(conteudoProduto)
 
-    
-    const editar = document.createElement("button")
-    const excluir = document.createElement("button")
+        const nome_input = document.createElement("input")
+        nome_input.type="text"
+        nome_input.value = coluna1
+        nome_input.setAttribute("readonly", "readonly")
+
+        
+        const recheio_input = document.createElement("input")
+        recheio_input.type="text"
+        recheio_input.value = coluna2
+        recheio_input.setAttribute("readonly", "readonly")
+
+        
+        const preco_input = document.createElement("input")
+        preco_input.type="number"
+        preco_input.value = coluna3
+        preco_input.setAttribute("readonly", "readonly")
+
+        conteudoProduto.appendChild(nome_input)
+        conteudoProduto.appendChild(recheio_input)
+        conteudoProduto.appendChild(preco_input)
 
 
-    tabelinha.appendChild(tabelinhabody)
-    tabelinha.classList.add("sessao-produto")
-    corpinho.appendChild(tabelinha)
-    corpinho.classList.add("first-page-sessao-cadastro")
+        const sessao_alteracao = document.createElement("div")
+
+        const produto_acoes_editar = document.createElement("button")
+        produto_acoes_editar.innerHTML = "Editar"
+        produto_acoes_editar.classList.add('botao-editar')
+        const produto_acoes_excluir = document.createElement("button")
+        produto_acoes_excluir.innerHTML = "Excluir"
+        produto_acoes_excluir.classList.add('botao-excluir')
 
 
-}
+        sessao_alteracao.appendChild(produto_acoes_editar)
+        sessao_alteracao.appendChild(produto_acoes_excluir)
+
+        produto.appendChild(sessao_alteracao)
+        ProdutoCadastrado.appendChild(produto)
+
+        nome.value = "";
+        recheio.value = "";
+        preco.value = "";
+
+
+
+        produto_acoes_editar.addEventListener('click', () =>{
+          if(produto_acoes_editar.innerText == "Editar"){
+            nome_input.removeAttribute("readonly")
+            recheio_input.removeAttribute("readonly")
+            preco_input.removeAttribute("readonly")
+            nome_input.focus()
+            produto_acoes_editar.innerText = "Salvar"
+          } else{
+            nome_input.setAttribute("readonly", "readonly")
+            recheio_input.setAttribute("readonly", "readonly")
+            preco_input.setAttribute("readonly", "readonly")
+            produto_acoes_editar.innerText = "Editar"
+          } 
+        })
+
+
+        produto_acoes_excluir.addEventListener('click', () =>{
+            ProdutoCadastrado.removeChild(produto)
+        })
+    })
+})
+ 
