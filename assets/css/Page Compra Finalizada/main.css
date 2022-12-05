@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Be+Vietnam+Pro:wght@300;400&family=Fredoka+One&family=Fredoka:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fundo-produto-body);
+    font-family: 'Fredoka', sans-serif;
+    height: 100vh;
+}
+
+:root{
+    --fundo-produto-body: #FFEDF0;
+    --footer: #EEFFD3;
+    --fundo-sessao-produto: #fff;
+    --paragrafo: #121212;
+    --muda-branco-rosa: #fff;
+    --label-cor-input: #ac374c;
+}
+
+html[data-theme='dark']{
+    --fundo-produto-body: #702935;
+    --fundo-sessao-produto: #511d26;
+    --footer: #192600;
+    --paragrafo: #fff;
+    --muda-branco-rosa: #511d26;
+    --label-cor-input: #fff;
+}
+
+
+/* fundo branco */
+#fundo{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    background: var(--fundo-sessao-produto);
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+    border-radius: 33px;
+}
+
+#fundo2{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 40px;
+    background: var(--fundo-sessao-produto);
+    box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25);
+    border-radius: 33px;
+}
+
+/*titulo carrinho*/
+#fundo > h4{
+    background-color: #DE4A66;
+    border-radius: 47.5px;
+    width: 210px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    vertical-align: top;
+    padding-left: 65px;
+    padding-top: 6px;
+    color:#fff;
+    font-size: 35px;
+}
+
+#fundo2 > h4{
+    background-color: #DE4A66;
+    border-radius: 47.5px;
+    width: 395px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    vertical-align: top;
+    padding-left: 65px;
+    padding-top: 6px;
+    color:#fff;
+    font-size: 35px;
+}
+
+#fundo > p{
+    width: 33%;
+    margin: auto;
+    font-size: 1.3rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: var(--paragrafo);
+}
+
+#fundo2 > p{
+    width: 62%;
+    margin: auto;
+    font-size: 1.3rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--paragrafo);
+}
+
+.fundo-content form{
+    width: 1211px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.fundo-content form input{
+    width: 436px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: var(--label-cor-input) 2px solid;
+    background-color: var(--muda-branco-rosa);
+}
+
+.fundo-content form input:focus{
+    border: 1px solid #DE4A66;
+}
+
+.fundo-content form label{
+    font-size: 1.3rem;
+    color: var(--label-cor-input);
+}
+
+.boleto-pagamento{
+    width: 330px;
+    margin: auto;
+    font-family: 'Fredoka One';
+    background-color: rgb(133, 200, 0);
+    cursor: pointer;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.boleto-pagamento p{
+    display: inline;
+    margin: 20px;
+}
+
+.boleto-pagamento a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.logo-moranguinho{
+    width: 110px;
+    height: 65px;
+    position: absolute;
+    margin-top: 25px;
+    left: 48%; 
+}
+
+footer{
+    background-color: var(--footer);
+    color: #DE4A66;
+    width: 100%;
+}
+
+.content-footer{
+    width: 180px;
+    padding: 15px 0px 15px 0px;
+    margin: auto;
+}
+.logo-moranguinho{
+    width: 110px;
+}
