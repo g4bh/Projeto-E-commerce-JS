@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="assets/css/Menu/menuStyle.css">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/Rolagem/scroll.css'> 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Moranguinho Store</title>
 </head>
 <body>
         <aside id="menu" class="menu">
             <div class="main-content">
-                <h1><a href="index.html"><img src="assets/img/LogoTemaClaro.png"></a></h1>
+                <h1><a href="index.html"><img src="assets/img/logoMoranguinho.png"></a></h1>
                 <nav>
                     <ul>
                         <li><a href="Produtos.html">Produtos</a></li>
@@ -22,17 +23,17 @@
                     </ul>
                 </nav>
                 <div class="switch-dark-theme">
-                    <img src="assets/img/switch/icon_sun_pink.svg" alt="">
+                    <i class="fa-solid fa-sun"></i>
                     <label for="checkbox" class="switch">
                         <input type="checkbox" id="checkbox">
                         <div class="slider-switch round"></div>
                     </label>
-                    <img src="assets/img/switch/icon_moon_pink.svg" alt="">
+                    <i class="fa-solid fa-moon"></i>
                 </div>
                 <div class="sessao-icon-adm">
-                    <a href="indexADM.html"><img src="assets/img/icon-padclock-branco.svg" alt="">ADM</a>
+                    <a href="indexADM.html"><i class="fa-solid fa-lock"></i>ADM</a>
                 </div>
-                <div class="carrinho"><a href="carrinho.html"><img src="assets/img/carrinho.svg" alt="Carrinho"></a></div>
+                <div class="carrinho"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
             </div>
         </aside> 
         
@@ -150,5 +151,6 @@
     <script src="assets/js/Home/main.js"></script>
     <script src="assets/js/Home/theme.js"></script>
     <script type="text/javascript" src="assets/js/menu_effect/main.js"></script>
+    <script src="assets/js/darkTheme/darkTheme.js"></script>
 </body>
 </html>

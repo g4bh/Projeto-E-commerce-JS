@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="assets/css/Page Produtos/main.css">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/Rolagem/scroll.css'> 
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Produtos</title>
 </head>
 <body class="gradiente">
     
     <aside id="menu" class="menu">
         <div class="main-content">
-            <h1><a href="index.html"><img src="assets/img/LogoTemaClaro.png"></a></h1>
+            <h1><a href="index.html"><img src="assets/img/logoMoranguinho.png"></a></h1>
             <nav>
                 <ul>
                     <li><a href="Produtos.html">Produtos</a></li>
@@ -23,17 +24,17 @@
                 </ul>
             </nav>
             <div class="switch-dark-theme">
-                <img src="assets/img/switch/icon_sun_pink.svg" alt="">
+                <i class="fa-solid fa-sun"></i>
                 <label for="checkbox" class="switch">
                     <input type="checkbox" id="checkbox">
                     <div class="slider-switch round"></div>
                 </label>
-                <img src="assets/img/switch/icon_moon_pink.svg" alt="">
+                <i class="fa-solid fa-moon"></i>
             </div>
             <div class="sessao-icon-adm">
-                <a href="indexADM.html"><img src="assets/img/icon-padclock-branco.svg" alt="">ADM</a>
+                <a href="indexADM.html"><i class="fa-solid fa-lock"></i>ADM</a>
             </div>
-            <div class="carrinho"><a href="carrinho.html"><img src="assets/img/carrinho.svg" alt="Carrinho"></a></div>
+            <div class="carrinho"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
         </div>
     </aside> 
 
@@ -54,19 +55,7 @@
                     <li><input type="button" id="filter-coco" value="Coco"></li>
                 </ul>
             </div>
-            <!-- <section class="content-produto-section">
-                <div class="card-produto">
-                    <div class="info-produto-card">
-                        <div class="imagem-produto-card"><img src="assets/img/bolo.png" alt=""></div>
-                        <div class="info-produto-card-content">
-                            <h2 class="nome-produto">Bolo de Chocolate</h2>
-                            <h3 class="sabor-produto">Com recheio de chocolate</h3>
-                            <p class="preco-produto">R$ 3,29 <span>unid.</span></p>
-                            <input type="button" id="botao-carrinho-produto" value="Adicionar ao carrinho">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
+
             <div id="produtos">
 
             </div>
@@ -91,8 +80,8 @@
 
     
     <script src="assets/js/menu_effect/main.js"></script>
-    <!-- <script src="assets/js/bolos.js"></script> -->
     <script src="assets/js/Produtos/main.js"></script>
+    <script src="assets/js/darkTheme/darkTheme.js"></script>
     
 </body>
 </html>

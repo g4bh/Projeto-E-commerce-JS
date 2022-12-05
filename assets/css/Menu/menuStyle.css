@@ -5,8 +5,21 @@
 
 :root{
     --color-pink-vibes: #DE4A66;
+    --cor-botao-menu:#DE4A66;
     --color-white: #fff;
     --color-baby-green: #E9FFC7;
+    --cor-menu-transicao: #FFEDF0;
+    --cor-boxShadow: #BCBCBC7A;
+    --botao-adm: #DE4A66;
+    --letra-botao-adm: #fff;
+}
+
+html[data-theme='dark']{
+    --cor-menu-transicao: #471B23;
+    --cor-boxShadow: #46464628;
+    --botao-adm: #fff;
+    --letra-botao-adm: #DE4A66;
+    --cor-botao-menu:#fff;
 }
 
 .menu{
@@ -43,16 +56,16 @@
     padding: 3rem;
     font-family: 'Fredoka One', cursive;
     font-size: 1.1rem;
-    color: var(--color-pink-vibes);
+    color: var(--cor-botao-menu);
 
 }
 
 .menuAlterado{
-    background-color: #FFEDF0;
-    box-shadow: 0px 4px 18px 0px #BCBCBC7A;
+    background-color: var(--cor-menu-transicao);
+    box-shadow: 0px 4px 18px 0px var(--cor-boxShadow);
 }
 
-.sessao-icon-adm img{
+.sessao-icon-adm i{
     margin-right: 10px;
     width: 15px;
 }
@@ -60,10 +73,10 @@
 .sessao-icon-adm a{
     font-family: 'Fredoka One', cursive;
     font-size: 1.1rem;
-    background-color: #DE4A66;
+    background-color: var(--botao-adm);
     padding: 10px 15px 10px 15px;
     border-radius: 20px;
-    color: #fff;
+    color: var(--letra-botao-adm);
     text-decoration: none;
 }
 
@@ -72,9 +85,11 @@
     align-items: center;
 }
 
-.switch-dark-theme img{
-    width: 20px;
+.switch-dark-theme i{
+    width: 25px;
     margin: 0px 20px 0px 20px;
+    font-size: large;
+    color: var(--botao-adm)
 }
 
 .switch{
@@ -130,6 +145,7 @@ input:checked + .slider-switch:before{
 }
 
 
-.carrinho img {
-    width: 2.4rem;
+.carrinho i {
+    font-size: 1.3rem;
+    color: var(--botao-adm)
 }

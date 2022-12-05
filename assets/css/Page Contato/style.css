@@ -5,8 +5,28 @@
     padding: 0;
 }
 
+:root{
+    --fundo-contato-body: #FFEDF0;
+    --muda-rosa-branco: #DE4A66;
+    --muda-branco-rosa: #fff;
+    --botao-enviar: #fff;
+    --botao-enviar-borda: #de4a66;
+    --botao-enviar-hover: #fff;
+    --botao-cor-hover: #de4a66;
+}
+
+html[data-theme='dark']{
+    --fundo-contato-body: #702935;
+    --muda-rosa-branco: #fff;
+    --muda-branco-rosa: #511d26;
+    --botao-enviar: #73953c;
+    --botao-enviar-borda: #73953c;
+    --botao-enviar-hover: #73953c;
+    --botao-cor-hover: #fff;
+}
+
 body{
-    background-color:#FFEDF0;
+    background-color:var(--fundo-contato-body);
     width: 100vw;
 }
 
@@ -15,8 +35,8 @@ body{
 }
 
 .form-contato{
-    border: 5px #DE4A66 dashed;
-    background-color: #FFFFFF;
+    border: 5px var(--muda-rosa-branco) dashed;
+    background-color: var(--muda-branco-rosa);
     width: 90vw;
     margin: auto;
     border-radius: 33px;
@@ -50,12 +70,12 @@ fieldset{
     width: 80%;
     padding: 90px 130px;
     font-family: 'Fredoka';
-    color: #DE4A66;
+    color: var(--muda-rosa-branco);
 }
 
 .texto-conteudo-aba-b{
     margin-bottom: 50px;
-    color: #DE4A66;
+    color: var(--muda-rosa-branco);
 }
 
 .texto-conteudo-aba-b p{
@@ -78,11 +98,12 @@ input{
     font-size: 20px;
     color:#9dc261;
     transition: 0.3s;
+    background-color: var(--muda-branco-rosa)
 }
 
 input::placeholder{
     font-size: 17px;
-    color: #DE4A66;
+    color: var(--muda-rosa-branco);
 }
 
 input:focus{
@@ -96,12 +117,13 @@ form{
 }
 
 label{
-    color: #DE4A66;
+    color: var(--muda-rosa-branco);
     font-size: 17px;
     font-weight: bold;
 }
 
 textarea{
+    background-color: var(--muda-branco-rosa);
     border: #d1e5b0 3px solid;
     width: 90%;
     height: 140px;
@@ -116,14 +138,14 @@ textarea{
 
 textarea:focus{
     outline: 0;
-    border: 3px solid #DE4A66;
+    border: 3px solid var(--muda-rosa-branco);
 }
 
 .button-enviar{
     padding: 5px 20px 5px 20px;
-    border: solid #DE4A66 1px;
-    background-color: #DE4A66;
-    color: #fff;
+    border: solid var(--botao-enviar-borda) 1px;
+    background-color: var(--botao-enviar);
+    color: var(--muda-rosa-branco);
     border-radius: 8px;
     font-weight: bold;
     font-size: 15px;
@@ -134,7 +156,7 @@ textarea:focus{
 }
 
 .button-enviar:hover{
-    background-color: #ECECEC;
-    color: #1E1E1E;
+    background-color: var(--botao-cor-hover);
+    color: var(--botao-enviar-hover);
     border: solid #ECECEC 1px;
 }
