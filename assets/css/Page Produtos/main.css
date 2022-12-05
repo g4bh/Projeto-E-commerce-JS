@@ -6,17 +6,38 @@
 }
 
 :root{
-    --fundo-contato-body: #FFEDF0;
+    --fundo-produto-body: #FFEDF0;
     --fundo-sessao-produto: #fff;
+    --titulo-produtos-carrinho: #DE4A66;
+    --letra-titulo: #fff;
+    --paragrafo: #000000;
+    --box-produto: #ffffff;
+    --footer: #E9FFC7;
+    --cinza--escuro: #3A3A3A;
+    --rosinha: #FD879D;
+    --fundo-botao-excluir: #87182C;
+    --fonte-botao-excluir: #ffffff;
+    --fundo-finalizar-compra: #84C703;
+    --fonte-finalizar-compra: #ffffff;
 }
 
 html[data-theme='dark']{
-    --fundo-contato-body: #B5495D;
-    --fundo-sessao-produto: #722533;
+    --fundo-produto-body: #702935;
+    --fundo-sessao-produto: #511d26;
+    --titulo-produtos-carrinho: #FFFFFF;
+    --letra-titulo: #87182C;
+    --paragrafo: #FFFFFF;
+    --cinza--escuro: #3A3A3A;
+    --box-produto: #3A3A3A;
+    --footer: #192600;
+    --fundo-botao-excluir: #B5495D;
+    --fonte-botao-excluir: #ffffff;
+    --fundo-finalizar-compra: #84C703;
+    --fonte-finalizar-compra: #ffffff;
 }
 
 body{
-    background-color:var(--fundo-contato-body);
+    background-color:var(--fundo-produto-body);
     font-family: 'Fredoka', sans-serif;
     height: 100vh;
 }
@@ -34,8 +55,9 @@ body{
     box-shadow: 0px 4px 24px rgba(69, 69, 69, 0.25)
 }
 
+/* titulo produtos e carrinho */
 .title-content-produtos{
-    background-color:var(--color-pink-vibes);
+    background-color:var(--titulo-produtos-carrinho);
     padding: 0.5em 2em 0.5em 2em;
     width: 4.4em;
     margin: auto;
@@ -43,7 +65,7 @@ body{
     border-radius: 40px;
     font-family: 'Fredoka';
     font-weight: 600;
-    color: var(--color-white);
+    color: var(--letra-titulo);
 }
 
 .title-conjunto{
@@ -56,17 +78,7 @@ body{
     width: 45.5rem;
     font-size: 1.3rem;
     margin: auto;
-}
-
-.filtro-content-produtos{
-    padding: 14px 0px 54px 0px;
-}
-
-.filtro-content-produtos ul{
-    list-style: none;
-    display: flex;
-    width: 46rem;
-    margin: auto;
+    color: var(--paragrafo);
 }
 
 input[type="button"]{
@@ -98,14 +110,14 @@ input[type="button"]:active{
     height: 27em;
     width: 18rem;
     background-color: var(--color-baby-green);
-    position: relative;
+    /* position: relative; */
     border-radius: 15px;
     margin: 20px;
     filter:  drop-shadow(0px 4px 8px rgba(20, 20, 20, 0.15));
 }
 
 .info-produto-card{
-    background-color: var(--color-white);
+    background-color: var(--box-produto);
     width: 18rem;
     height: 310px;
     position: absolute;
@@ -147,6 +159,7 @@ input[type="button"]:active{
 .info-produto-card-content h2{
     width: 252px;
     font-weight: 300;
+    color: var(--paragrafo);
 }
 
 
@@ -154,22 +167,22 @@ input[type="button"]:active{
     font-weight: 500;
     font-size: 0.8rem;
     width: 252px;
+    color: var(--paragrafo);
 }
 
 .info-produto-card-content p{
-    color: #3A3A3A;
+    color: var(--cinza-escuro);
     padding: 20px;
     font-size: 1.6rem;
+    color: var(--paragrafo);
 }
 
 span{
     font-size: 0.9rem;
 }
 
-
-
 footer{
-    background-color: #EEFFD3;
+    background-color: var(--footer);
     width: 100%;
 }
 
@@ -182,25 +195,117 @@ footer{
     width: 110px;
 }
 
-/* #produtos{
+/* carrinho */
+#linha-tb{
+    background-color: var(--rosinha);
+    width: 67%;
+    height: 60px;
+    margin-left: 17%;
+    margin-top: 13%;
+    border-radius: 8px;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--paragrafo);
+    margin: 60px 13%;
+
+}
+
+#btn-compra{
+    padding: 5px 15px 5px 15px;
+    border: solid var(--fundo-finalizar-compra) 1px;
+    background-color: var(--fundo-finalizar-compra);
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Fredoka';
+    font-size: 20px;
+    margin-left: 80%;
+    width: 200px;
+    height: 50px;
+    color: var(--fonte-finalizar-compra);
+    margin-top: 3%;
+}
+
+.excluir{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 3.5%;
+    background-color: var(--fundo-botao-excluir);
+    color: var(--fonte-botao-excluir);
+    padding: 5px 15px 5px 15px;
+    border: solid var(--fundo-botao-excluir) 1px;
+    border-radius: 34.5px;
+    transition: all 0.3s ease 0s;
+    font-family: 'Fredoka';
+    height: 40px;
+    display:inline;
+}
+
+.carrinho2{
+    box-sizing: border-box;
+    width: 67%;
+    height: 160px;
+    margin-left: 14%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    background-color: var(--fundo-sessao-produto);
+    color: var(--paragrafo);
+}
+
+/* Titulo bolo */
+.carrinho2 > h2{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 22%;
+    display: inline;
+    font-weight: 400;
+}
+
+/* quantidade */
+.carrinho2 > p{
+    position: absolute;
+    display: inline;
+    padding-top: 5.2%;
+    margin-left: 37%;
+    padding-right: 20px;
+} 
+.carrinho2 > h3{
+    font-weight: 400;
+    padding-top: 9.3%;
+    margin-left: 84%;
+    padding-right: 20px;
+} 
+
+.img-produto-card{
+    position: absolute;
+    margin-top: 2.5%;
+    margin-left: 9%;
+    width: 160px;
+    height: 110px;
+    overflow: hidden;
+    display:inline;
+}
+
+#botao-carrinho-produto{
+    background-color:var(--color-pink-vibes);
+    border: solid var(--color-pink-vibes) 1px;
+    text-decoration: none;
+    padding: 0.5em 2em 0.5em 2em;
+    margin: auto;
+    border-radius: 40px;
+    font-family: 'Fredoka';
+    color: var(--color-white);
+}
+
+#botao-carrinho-produto a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+#produtos{
     max-width: 900px;
-    margin: 0 auto;
-    padding:0 5%;
-    display:flex;
+    padding: 0 2%;
+    display: flex;
 }
-
-#carrinhos{
-    max-width: 900px;
-    margin: 0 auto;
-    padding:0 2%;
-    display: block;
-}
-
-.produto-single{
-    width: 33.3%;
-    padding:0 20px;
-}
-
-.cake-image{
-    width:200px;
-} */
