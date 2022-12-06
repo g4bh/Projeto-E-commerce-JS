@@ -110,7 +110,6 @@ input[type="button"]:active{
     height: 27em;
     width: 18rem;
     background-color: var(--color-baby-green);
-    /* position: relative; */
     border-radius: 15px;
     margin: 20px;
     filter:  drop-shadow(0px 4px 8px rgba(20, 20, 20, 0.15));
@@ -311,7 +310,7 @@ hr {
 }
 
 #produtos{
-    max-width: 900px;
-    padding: 0 2%;
+    width: 1318px;
     display: flex;
+    margin: auto;
 }

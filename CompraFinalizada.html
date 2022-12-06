@@ -45,18 +45,18 @@
     <div class="fundo-content">
         <form>
             <label for="cep">CEP:</label>
-            <input type="text" maxlength="9" id='cep'>
+            <input type="text" maxlength="9" id='cep' required placeholder="* CEP">
             <label for="lougradouro">Rua:</label>
-            <input type="text" id="logradouro"><br>
+            <input type="text" id="logradouro" required placeholder="* Rua"><br>
             <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro">
+            <input type="text" id="bairro" required placeholder="* Bairro">
             <label for="complemento">Complemento:</label>
-            <input type="text" id="complemento">
+            <input type="text" id="complemento" required placeholder="* Complemento">
             <label for="uf">UF:</label>
-            <input type="text" id="uf">
+            <input type="text" id="uf" required placeholder="* UF">
             <label for="uf">Telefone:</label>
-            <input type="number" id="telefone">
-            
+            <input type="tel" id="telefone" required placeholder="* Telefone">
+            <input type="submit" value="Próximo">
         </form>
     </div>
 </div>

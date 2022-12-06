@@ -18,9 +18,11 @@ body{
     --paragrafo: #121212;
     --muda-branco-rosa: #fff;
     --label-cor-input: #ac374c;
+    --titulo-produtos-carrinho: #DE4A66;
 }
 
 html[data-theme='dark']{
+    --titulo-produtos-carrinho: #FFFFFF;
     --fundo-produto-body: #702935;
     --fundo-sessao-produto: #511d26;
     --footer: #192600;
@@ -55,7 +57,7 @@ html[data-theme='dark']{
 
 /*titulo carrinho*/
 #fundo > h4{
-    background-color: #DE4A66;
+    background-color: var(--titulo-produtos-carrinho);
     border-radius: 47.5px;
     width: 210px;
     height: 50px;
@@ -64,12 +66,12 @@ html[data-theme='dark']{
     vertical-align: top;
     padding-left: 65px;
     padding-top: 6px;
-    color:#fff;
+    color:var(--fundo-sessao-produto);
     font-size: 35px;
 }
 
 #fundo2 > h4{
-    background-color: #DE4A66;
+    background-color: var(--titulo-produtos-carrinho);
     border-radius: 47.5px;
     width: 395px;
     height: 50px;
@@ -78,12 +80,12 @@ html[data-theme='dark']{
     vertical-align: top;
     padding-left: 65px;
     padding-top: 6px;
-    color:#fff;
+    color:var(--fundo-sessao-produto);
     font-size: 35px;
 }
 
 #fundo > p{
-    width: 33%;
+    width: 450px;
     margin: auto;
     font-size: 1.3rem;
     margin-top: 60px;
@@ -104,7 +106,7 @@ html[data-theme='dark']{
 .fundo-content form{
     width: 1211px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 76px;
 }
 
 .fundo-content form input{
@@ -116,6 +118,30 @@ html[data-theme='dark']{
     margin-bottom: 30px;
     border: var(--label-cor-input) 2px solid;
     background-color: var(--muda-branco-rosa);
+    color: var(--paragrafo);
+    font-family: 'Fredoka';
+    font-size: 1.2rem;
+}
+
+.fundo-content form input[type="submit"]{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: var(--label-cor-input) 2px solid;
+    background-color: var(--muda-branco-rosa);
+    color: var(--paragrafo);
+    font-family: 'Fredoka';
+    font-size: 1.2rem;
+    float: right;
+}
+
+.fundo-content form input[type="submit"]:hover{
+    background-color: var(--titulo-produtos-carrinho);
+    color: var(--fundo-produto-body);
+    transition: all 0.3s;
 }
 
 .fundo-content form input:focus{
